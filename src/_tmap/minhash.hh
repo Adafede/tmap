@@ -21,7 +21,7 @@
 #include <math.h>
 #include <vector>
 
-#include "omp.h"
+#include "/opt/homebrew/opt/libomp/include/omp.h"
 
 namespace tmap {
 /**

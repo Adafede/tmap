@@ -11,7 +11,6 @@ import subprocess
 from distutils.version import LooseVersion
 from setuptools import setup, Extension, find_packages
 from setuptools.command.build_ext import build_ext
-from setuptools.command.test import test as TestCommand
 from shutil import copyfile, copymode
 
 
@@ -112,6 +111,5 @@ setup(
     package_dir={"": "src"},
     ext_modules=[CMakeExtension("_tmap")],
     cmdclass=dict(build_ext=CMakeBuild),
-    test_suite="tests",
     zip_safe=False,
 )
